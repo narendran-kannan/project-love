@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Will You Marry Me? 💍
+
+A fun, wholesome proposal page where the "No" button runs away from the cursor — they can only say **Yes!**
+
+> **This project was entirely vibe coded.** Contributions are welcome!
+
+## Features
+
+- **Personalized proposals** — Enter names, a personal message, and pick a color theme
+- **Shareable links** — Generate a unique URL to send to your loved one (no backend needed!)
+- **Runaway "No" button** — The No button escapes the cursor, growing more desperate with each attempt
+- **Growing "Yes" button** — Gets bigger every time they try to click No
+- **Intro animation** — "Hey [name]... [your name] has something very important to ask you"
+- **Celebration page** — Confetti, bouncing emojis, rotating love quotes, and personalized names
+- **6 color themes** — Rose, Ocean, Sunset, Lavender, Forest, Midnight
+- **Framer Motion animations** — Floating hearts, heartbeat ring, smooth transitions everywhere
+- **Fully client-side** — Everything is encoded in URL params, zero backend
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org) (App Router)
+- [Tailwind CSS](https://tailwindcss.com) v4
+- [Framer Motion](https://www.framer.com/motion/)
+- TypeScript
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the landing page. Click **"Create Yours Now"** to personalize and generate a shareable link.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How It Works
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Visit `/create` to fill in names, a message, and pick a theme
+2. Hit **"Preview & Get Link"** to see a preview and get a shareable URL
+3. Send the link to your loved one — it opens `/propose?to=Name&from=You&msg=...&theme=sunset`
+4. They see a personalized intro, the proposal, and the runaway No button
+5. When they click Yes — confetti, celebration, and "Forever & Always"
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome! Feel free to open issues or submit pull requests. Some ideas:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- More color themes
+- Sound effects / background music toggle
+- Custom emoji picker
+- Photo upload support
+- More celebration animations
+- i18n / multi-language support
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy
 
-## Deploy on Vercel
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Or deploy anywhere that supports Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+MIT
